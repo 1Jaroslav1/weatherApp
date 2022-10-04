@@ -1,0 +1,94 @@
+.list{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 40px;
+    margin-bottom: 40px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 30px;
+        padding: 15px;
+        border: 1px solid rgb(219, 218, 218);
+        margin-top: 10px;
+        border-radius: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        &-name{
+            font-family: 'Luckiest Guy', cursive;
+            color: #27476E;
+            font-size: 25px;
+        }
+        &-temp{
+            font-size: 18px;
+            font-family: 'Luckiest Guy', cursive;
+            margin-right: 20px;
+            span{
+                font-size: 22px;
+            }
+        }
+        &-info{
+            font-family: 'Luckiest Guy', cursive;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 60%;
+        }
+        &-condition{
+            text-align: center;
+        }
+        &_close{
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: #fff;
+            border: 1px solid rgb(219, 218, 218);
+            padding: 5px;
+            border-radius: 100%;
+            svg{
+                transition: 1s all;
+                position: relative;
+                display: block;
+                width: 20px;
+                height: 20px;
+                transition: .5s all;
+                path{
+                    fill: #27476E;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+                svg{
+                    transform: scale(1.2);
+                    transition: .5s all;
+                    path{
+                        fill: red;
+                    }
+                }
+            }
+        }
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+}
+
+.btn{
+    padding: 20px;
+    border: 1px solid black;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(151, 148, 148)
+    }
+}

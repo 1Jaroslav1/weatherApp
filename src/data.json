@@ -1,0 +1,24 @@
+{
+    "favoriteCities": [
+        {
+            "id": 1,
+            "name": "Warszawa",
+            "aqi": true
+        },
+        {
+            "id": 2,
+            "name": "Kiew",
+            "aqi": true
+        },
+        {
+            "id": 3,
+            "name": "London",
+            "aqi": true
+        },
+        {
+            "id": 4,
+            "name": "Berlin",
+            "aqi": true
+        }
+    ]
+}

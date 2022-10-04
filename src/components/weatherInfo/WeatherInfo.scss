@@ -1,0 +1,191 @@
+.info{
+    margin-bottom: 50px;
+    &__input{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        margin: 0 auto;
+        padding-top: 100px;
+        &-search{
+            display: block;
+            margin: 0 auto;
+            border: 2px solid #006992;
+            padding: 0 20px;
+            border-radius: 25px;
+            height: 50px;
+            width: 65%;
+            outline:none;
+            font-size: 20px;
+            margin-left: 5px;
+        }
+        &-text{
+            width: 100px;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            margin-right: 5px;
+        }
+        &-btn{
+            border: 2px solid #006992;
+            background: #ffffff;
+            color: #006992;
+            border-radius: 25px;
+            width: 25%;
+            height: 50px;
+            font-size: 20px;
+            font-weight: 500;
+            margin-left: 5px;
+            &:hover{
+                background: #006992;
+                color: #fff;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+        }
+    }
+    &__box{
+        width: 30%;
+        margin: 0 auto;
+        padding: 50px 20px 30px 20px;
+        background-color: #fff;
+        border-radius: 30px;
+        margin-top: 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 25px;
+        border: 2px solid #006992;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+        &-header{
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        &-city{
+            font-size: 40px;
+            font-family: 'Luckiest Guy', cursive;
+            span{
+                color: #27476E;
+            }
+        }
+        &-country{
+            font-size: 30px;
+            font-family: 'Luckiest Guy', cursive;
+            span{
+                color: #27476E;
+            }
+        }
+        &-localtime{
+            font-size: 20px;
+            font-family: 'Luckiest Guy', cursive;
+            span{
+                color: #27476E;
+            }
+        }
+        &-item{
+            width: 70%;
+            display: flex;
+            align-items:stretch;
+            justify-content: space-between;
+            align-content: stretch;
+            margin-top: 10px;
+            border-radius: 15px;
+            border-bottom: 1px solid #708caf;
+            border-right: 1px solid #708caf;
+            padding: 10px 10px;
+            background-color: #27476E;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            &-title{
+                display: flex;
+                align-items:center;
+                font-size: 20px;
+                font-weight: bold;
+                color: #fff;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                }
+            }
+            &-descr{
+                font-size: 20px;
+                font-weight: bold;
+                color: #CCDBDC;
+            }
+        }
+    }
+    &__like{
+        background-color: white;
+        height: 50px;
+        border: none;
+        box-shadow: none;
+        margin-top: 30px;
+        i{
+            font-size: 30px;
+            color: #27476E;
+            margin: 0 auto;
+            &:hover{
+                animation: heart 0.8s linear infinite;
+                cursor: pointer;
+            }
+        }
+        
+        
+    }
+}
+
+.liked{
+    i{
+        color: red;
+    }
+}
+
+// switch style 
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 100px;
+    height: 50px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.6s;
+}
+
+input:checked + label {
+    transition: .6s;
+    background: #27476E;
+}
+
+input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+//
+
+@keyframes heart {
+    0% {font-size: 30px; color: #27476E;}
+    50% {font-size: 40px; color: red;}
+    100% {font-size: 30px; color: #27476E;}
+}

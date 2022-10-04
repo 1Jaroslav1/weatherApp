@@ -1,0 +1,17 @@
+.page{
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 150px;
+    &__title{
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 100px;
+        text-align: center;
+        color: #fff;
+    }
+    &__descr{
+        font-size: 70px;
+        font-family: 'Zilla Slab', serif;
+        text-align: center;
+        color: rgb(196, 196, 196);
+    }
+}
